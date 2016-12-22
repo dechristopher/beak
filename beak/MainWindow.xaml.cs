@@ -23,6 +23,7 @@ namespace beak
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine("It works!");
         }
     }
 }
