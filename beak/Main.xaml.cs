@@ -5,13 +5,13 @@ using System.Windows.Input;
 namespace beak
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Main.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : Window
     {
         HotKey hotKey;
 
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
             Console.WriteLine("It works!");
@@ -26,7 +26,7 @@ namespace beak
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            
+            hotKey.Unregister();
         }
     }
 }
